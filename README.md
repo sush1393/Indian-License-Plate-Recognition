@@ -17,12 +17,12 @@ End-to-end **Indian License Plate Recognition (ALPR)** system using **YOLOv5-LSE
 - **Detection:** 99.5% mAP@0.5 with YOLOv5-LSE.
 - **Recognition:** ~76% character accuracy (limited by small dataset).
 - **Speed:** Runs on CPU in ~16 ms per image.
-
 ---
 
 ## 🏗️ Architecture
 
 The system uses a **two-stage end-to-end pipeline**:
+
 Input Image (Car)
 ↓
 [Stage 1] YOLOv5-LSE Detection → Crops the plate
@@ -46,6 +46,7 @@ Output Text (e.g., "UP32FH2653")
 ---
 
 ## 📁 Project Structure
+
 Indian-License-Plate-Recognition/
 ├── code/
 │ ├── demo_inference.py # End-to-end pipeline
@@ -72,15 +73,14 @@ Indian-License-Plate-Recognition/
 ```bash
 git clone https://github.com/sush1393/Indian-License-Plate-Recognition.git
 cd Indian-License-Plate-Recognition
+
 2. Install dependencies
-bash
 pip install -r requirements.txt
+
 3. Prepare model weights
 ⚠️ Note: Trained model weights (.pt, .pth) are not included in this repository due to size limits. You need to either:
-
 Option A (Recommended): Train your own models using the code in this repository and place the weights here:
 
-text
 weights/
 ├── yolov5_LSE_pure_state.pt   # YOLOv5-LSE trained weights
 └── crnn_tiny_plate.pth        # CRNN trained weights
@@ -132,20 +132,8 @@ Hu J, Shen L and Sun G (2018) Squeeze-and-Excitation networks. Proceedings of IE
 Sushma Boreddy
 
 Course: CSE397 - Mini Project (M.C.A)
-Guide: Dr. Karthikeyan M.P., Assistant Professor-III
 Institution: SASTRA Deemed to be University, Thanjavur
 
 📜 License
 This project is submitted as part of the CSE397 Mini Project at SASTRA Deemed to be University.
 
----
-
-### Step 3: Commit the file
-
-1. Scroll down to the bottom of the page.
-2. In the **Commit message** box, type: `Added README with project details`
-3. Click the green **"Commit new file"** button.
-
----
-
-### ✅ Done!
